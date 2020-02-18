@@ -41,14 +41,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-lk-Frg">
-                                <rect key="frame" x="27" y="215" width="319" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">UH West Oʻahu has been the fastest growing school of its type in the nation for the past two years, according to the Chronicle of Higher Education’s annual almanac. Enrollment surged 239 percent between 2006 and 2016, or the most by any public baccalaureate granting institution. In 2017 UH West Oʻahu led the list of fastest growing colleges.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAH-Lc-21q">
                                 <rect key="frame" x="14" y="448" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,14 +50,25 @@
                                 <rect key="frame" x="254" y="448" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="About ACM"/>
+                                <connections>
+                                    <action selector="AboutACMbuttonpressed:" destination="coY-2S-toF" eventType="touchUpInside" id="1Lj-BN-yQv"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-lk-Frg">
+                                <rect key="frame" x="27" y="134" width="319" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">UH West Oʻahu has been the fastest growing school of its type in the nation for the past two years, according to the Chronicle of Higher Education’s annual almanac. Enrollment surged 239 percent between 2006 and 2016, or the most by any public baccalaureate granting institution. In 2017 UH West Oʻahu led the list of fastest growing colleges.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yxA-eE-U7k"/>
                     </view>
                     <navigationItem key="navigationItem" id="wob-nM-l8O"/>
                     <connections>
-                        <outlet property="aboutUhwoButtonPressed" destination="BAH-Lc-21q" id="ugc-3o-YTe"/>
+                        <outlet property="FirstTextView" destination="bl2-lk-Frg" id="uIp-BJ-Va8"/>
                         <outlet property="uhwo" destination="0j2-5m-GAe" id="fRG-7x-LnV"/>
                     </connections>
                 </viewController>
