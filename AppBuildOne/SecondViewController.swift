@@ -9,13 +9,23 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+var order = 66
+var obi = 1
+  
+    @IBOutlet weak var sumLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.sumLabel.text = String(order + obi)
         // Do any additional setup after loading the view.
+    if order>obi
+    {
+        self.view.backgroundColor = UIColor.red
+        }
+    else{
+        self.view.backgroundColor = UIColor.blue
+        }
     }
-    
+   
 
     /*
     // MARK: - Navigation
