@@ -15,7 +15,7 @@ var obi = 1
     @IBOutlet weak var sumLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.sumLabel.text = String(order + obi)
+        self.sumLabel.text = " "
         // Do any additional setup after loading the view.
     if order>obi
     {
@@ -25,7 +25,10 @@ var obi = 1
         self.view.backgroundColor = UIColor.blue
         }
     }
-   
+    @IBAction func CalculatePressed(_ sender: Any) {
+        self.sumLabel.text = String(order + obi)
+    }
+  
 
     /*
     // MARK: - Navigation
